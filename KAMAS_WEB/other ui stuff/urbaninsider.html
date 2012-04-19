@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>urban insider</title>
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="Lily Szajnberg">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<link rel="apple-touch-icon-precomposed" href="/onions.jpeg">
+	<!-- Date: 2011-03-31 -->
+	<script src="http://code.jquery.com/jquery-1.4.2.min.js" ></script>
+	<script>
+	//on window load, show onion image
+	$(window).load(function(){
+		//when mouse is over image, display message
+		//set time out
+		$('#onions').hover(function(){
+	          $('#onions').delay(1000).fadeOut('slow'); 
+	         
+	        });
+	});
+	</script>
+	<style>
+	h1 {
+		color:red;
+		font-size: 50px;
+		font-family: Helvetica;
+		margin: auto;
+		z-index: 1;
+		
+	}
+	
+	h2{
+		color:red;
+		font-size: 30px;
+		font-family: ;
+		position: center;
+		margin: center;
+		z-index: 1;
+		
+	}
+	p{
+		color:black;
+		font-size: 20px;
+		font-family: Helvetica;
+		margin: center;
+		position: center;
+		z-index: 1;
+	}
+	
+	#onions img{
+		position: absolute;
+		z-index: 5;
+		margin: center;
+		width: auto;
+		height: auto; 
+		
+	}
+	</style>
+</head>
+<body>
+	<div id = "onions"><img id ="onions" src="urbaninsider.png">
+		</div>
+	<h1>Pardon our appearance.</h1>
+	<h2>(We are still primping.)</h2>
+	<p>Please come back once we've finished putting on our face.</p>
+
+</body>
+</html>

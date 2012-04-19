@@ -1,0 +1,28 @@
+
+<!--where the form goes (/tips) and how (post)-->
+<form method= "POST" action= "/tips">
+	<!-- #<Tip :tip, :tip_category, :tip_popularity -->
+
+	<p><label>Tip</label><input type="text" name="tip" />	</p>
+	<p><label>Tip Category</label></p>
+	<select name="tip_category">
+		<option value="Bronx">Bronx</option>
+		<option value="Brooklyn">Brooklyn</option>
+		<option value="Manhattan">Manhattan</option>
+		<option value="Queens">Queens</option>
+		<option value="Staten Island">Staten Island</option>
+		<option value="New York">New York</option>
+	</select>
+
+<p>	<input type="submit" value="Add Tip!" /></p>
+
+</form>
+
+<!--
+value="{'boro': 'Bronx', 'lat': 40.03409834, 'lon': -139.0009}"
+$category =json_decode($_POST["category"]);
+$category=>boro = "Bronx"
+
+
+
+>

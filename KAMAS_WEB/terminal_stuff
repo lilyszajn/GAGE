@@ -1,0 +1,69 @@
+run your app:
+
+- start terminal
+- go to your code:
+cd ~/Sites/ui
+- start your sinatra app (using "rerun" for automatic restarting)
+rerun ruby urban_insider.rb
+
+- run the ruby console:
+irb
+
+- in irb, load up your code:
+require 'user.rb'
+
+- then you can do things like:
+User.new
+User.all
+User.get
+etc
+
+- when you create a new model
+- you have to structure the database to hold it
+- so, in irb (assuming a model called Cat in a file called cat.rb):
+>> require 'cat'
+>> Cat.auto_migrate!
+
+then Cat.new, Cat.all, Cat.get will work
+
+- create a new heroku app:
+
+$ heroku create my-app
+
+- turn your app into a git repository
+
+$ git init
+
+- add all your files to git
+
+$ git add .
+
+- commit your files to git
+
+$ git commit -m "<your commit message>"
+
+=> commit message describes your changes
+
+
+$ git status
+
+=> "nothing to commit" is good
+=> git knows about everything
+
+- add heroku to git:
+
+$ git remote add heroku git@heroku.com:urbaninsider.git
+
+(the git@... url we get from heroku)
+
+- deploy to heroku
+
+$ git push heroku master
+
+- show heroku logs (to find out what went wrong):
+
+$ heroku logs
+
+- log into heroku console (like irb for the real app)
+
+$ heroku console
